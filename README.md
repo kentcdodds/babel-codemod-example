@@ -13,5 +13,3 @@ import {readFile} from 'fs'
 ```
 
 In [this quick video](http://kcd.im/babel-codemod-video), I show you a quick babel plugin I wrote to do a codemod on my code to fix this automatically.
-
-Code is here: https://github.com/kentcdodds/babel-codemod-example

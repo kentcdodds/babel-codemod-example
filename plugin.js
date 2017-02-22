@@ -31,7 +31,7 @@ module.exports = function(babel) {
         }
         specifiers.forEach(specifier => {
           const {node: {imported: {name}}} = specifier
-          const {referencePaths} = specifier.scope.getBinding(specifier.node.imported.name)
+          const {referencePaths} = specifier.scope.getBinding(name)
           referencePaths.forEach(refPath => {
             refPath.replaceWith(
               t.memberExpression(memberObjectNameIdentifier, t.identifier(name))

@@ -4,7 +4,7 @@ import cp from 'child_process'
 
 resolve(__dirname, './thing')
 
-fs.readFile('./thing.js', 'utf8', (err, string) => {
+readFile('./thing.js', 'utf8', (err, string) => {
   console.log(string)
 })
 
